@@ -1,551 +1,412 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="康复训练设备应用隐私政策">
-    <title>用户隐私政策 - 神经和肌肉刺激器</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .container {
-            background-color: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            padding: 40px;
-            margin-bottom: 40px;
-        }
-        
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 30px;
-            border-bottom: 2px solid #f0f0f0;
-        }
-        
-        h1 {
-            color: #416699;
-            font-size: 32px;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-        
-        .subtitle {
-            color: #666;
-            font-size: 18px;
-            margin-bottom: 25px;
-			text-align:center;
-        }
-        
-        .last-updated {
-            color: #888;
-            font-size: 16px;
-            background-color: #f8f9fa;
-            padding: 10px 20px;
-            border-radius: 6px;
-            display: inline-block;
-        }
-        
-        h2 {
-            color: #416699;
-            font-size: 24px;
-            margin: 40px 0 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #eaeaea;
-            font-weight: 600;
-        }
-        
-        h3 {
-            color: #555;
-            font-size: 20px;
-            margin: 30px 0 15px;
-            font-weight: 500;
-        }
-        
-        p {
-            margin-bottom: 18px;
-            font-size: 16px;
-            text-align: justify;
-            line-height: 1.8;
-        }
-        
-        ul, ol {
-            margin: 15px 0 25px 30px;
-        }
-        
-        li {
-            margin-bottom: 12px;
-            line-height: 1.6;
-        }
-        
-        .highlight {
-            background-color: #f8f9fa;
-            padding: 25px;
-            border-radius: 8px;
-            margin: 25px 0;
-            border-left: 4px solid #416699;
-        }
-        
-        .contact-info {
-            background-color: #f0f7ff;
-            padding: 25px;
-            border-radius: 8px;
-            margin: 30px 0;
-            border: 1px solid #d1e3ff;
-        }
-        
-        .contact-info h3 {
-            margin-top: 0;
-            color: #416699;
-        }
-        
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 25px 0;
-            font-size: 15px;
-        }
-        
-        th, td {
-            padding: 15px;
-            text-align: left;
-            border: 1px solid #e0e0e0;
-        }
-        
-        th {
-            background-color: #f8f9fa;
-            font-weight: 600;
-            color: #416699;
-        }
-        
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        
-        .important {
-            color: #dc3545;
-            font-weight: 500;
-        }
-        
-        .note {
-            font-size: 14px;
-            color: #6c757d;
-            font-style: italic;
-            margin-top: 5px;
-        }
-        
-        .language-switcher {
-            text-align: right;
-            margin-bottom: 20px;
-        }
-        
-        .language-switcher a {
-            display: inline-block;
-            padding: 8px 16px;
-            background-color: #416699;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 14px;
-            transition: background-color 0.3s;
-        }
-        
-        .language-switcher a:hover {
-            background-color: #3a5c8c;
-        }
-        
-        .back-to-app {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 30px;
-            border-top: 1px solid #eee;
-        }
-        
-        .back-to-app a {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: #416699;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-size: 16px;
-            transition: all 0.3s;
-        }
-        
-        .back-to-app a:hover {
-            background-color: #3a5c8c;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(65, 102, 153, 0.2);
-        }
-        
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 1px solid #eee;
-            color: #888;
-            font-size: 14px;
-        }
-        
-        @media (max-width: 768px) {
-            body {
-                padding: 15px;
-            }
-            
-            .container {
-                padding: 25px 20px;
-            }
-            
-            h1 {
-                font-size: 26px;
-            }
-            
-            h2 {
-                font-size: 22px;
-            }
-            
-            h3 {
-                font-size: 18px;
-            }
-            
-            table {
-                font-size: 14px;
-            }
-            
-            th, td {
-                padding: 10px;
-            }
-        }
-        
-        @media print {
-            body {
-                background-color: white;
-                padding: 0;
-            }
-            
-            .container {
-                box-shadow: none;
-                padding: 0;
-            }
-            
-            .language-switcher,
-            .back-to-app {
-                display: none;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="language-switcher">
-        <a href="#en" onclick="switchLanguage('en')">English</a>
-        <a href="#zh" onclick="switchLanguage('zh')" style="margin-left: 10px;">中文</a>
-    </div>
-    
-    <div class="container" id="zh-version">
-        <header>
-            <h1>用户隐私政策</h1>
-            <p class="subtitle">神经和肌肉刺激器</p>
-            <div class="last-updated">最后更新日期：2024年1月15日</div>
-        </header>
-        
-        <section>
-            <p>感谢您使用我们的神经和肌肉刺激器应用（以下简称"本应用"）。我们深知个人信息对您的重要性，并会尽全力保护您的个人信息安全。本隐私政策旨在向您说明我们如何收集、使用、存储、共享和保护您的个人信息，以及您如何管理您的个人信息。</p>
-            
-            <p class="important">在使用本应用前，请您仔细阅读并理解本隐私政策的全部内容。如果您不同意本隐私政策的任何内容，您应立即停止使用本应用。当您开始使用本应用，即表示您已充分理解并同意本隐私政策的全部内容。</p>
-        </section>
-        
-        <section>
-            <h2>一、我们收集的信息</h2>
-            <p>为向您提供服务，我们会收集以下类型的信息：</p>
-            
-            <h3>1.1 您提供的信息</h3>
-            <ul>
-                <li><strong>账户信息</strong>：当您注册账户时，我们会收集您的用户名、密码等。</li>
-                <li><strong>患者信息</strong>：当您添加患者时，我们会收集患者的姓名、性别、年龄、身体状况等医疗相关信息。</li>
-                <li><strong>训练数据</strong>：在训练过程中，我们会收集训练时间、训练方案、训练强度、训练频率等数据。</li>
-                <li><strong>设备信息</strong>：为连接康复训练设备，我们会收集设备型号、设备ID、设备状态等信息。</li>
-            </ul>
-            
-            <h3>1.2 我们自动收集的信息</h3>
-            <ul>
-                <li><strong>设备信息</strong>：我们可能会收集您设备的型号、操作系统版本、唯一设备标识符等信息。</li>
-                <li><strong>日志信息</strong>：当您使用本应用时，我们可能会自动收集您对我们服务的详细使用情况，作为服务日志保存。</li>
-                <li><strong>位置信息</strong>：在您同意的情况下，我们可能会收集您的大致位置信息，用于提供本地化服务。</li>
-            </ul>
-            
-            <div class="highlight">
-                <p><strong>重要提示</strong>：本应用收集的所有健康相关数据仅用于为您提供康复训练服务，不会用于其他商业目的。我们不会将您的健康数据出售给任何第三方。</p>
-            </div>
-        </section>
-        
-        <section>
-            <h2>二、我们如何使用您的信息</h2>
-            <p>我们会在以下情况下使用您的个人信息：</p>
-            
-            <table>
-                <thead>
-                    <tr>
-                        <th>使用目的</th>
-                        <th>使用信息</th>
-                        <th>法律依据</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>提供康复训练服务</td>
-                        <td>患者信息、训练数据、设备信息</td>
-                        <td>履行合同</td>
-                    </tr>
-                    <tr>
-                        <td>改善和优化服务</td>
-                        <td>使用日志、设备信息</td>
-                        <td>合法利益</td>
-                    </tr>
-                    <tr>
-                        <td>保障账户安全</td>
-                        <td>账户信息、登录信息</td>
-                        <td>履行合同、合法利益</td>
-                    </tr>
-                    <tr>
-                        <td>遵守法律法规</td>
-                        <td>根据法律规定需要的信息</td>
-                        <td>法律义务</td>
-                    </tr>
-                    <tr>
-                        <td>与您联系</td>
-                        <td>联系方式、账户信息</td>
-                        <td>履行合同、合法利益</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <p class="note">注：我们仅在实现特定目的所必需的时间内保留您的个人信息，除非法律要求或允许在更长的期间内保留这些信息。</p>
-        </section>
-        
-        <section>
-            <h2>三、信息共享与披露</h2>
-            <p>我们不会将您的个人信息出售给任何第三方。我们仅在以下情况下共享您的个人信息：</p>
-            
-            <ul>
-                <li><strong>获得您的明确同意</strong>：在获得您的明确同意后，我们会与其他方共享您的个人信息。</li>
-                <li><strong>履行法定义务</strong>：根据法律法规规定、诉讼争议解决需要，或按行政、司法机关依法提出的要求，我们可能会共享您的个人信息。</li>
-                <li><strong>保护人身和财产安全</strong>：为维护用户或公众的人身财产安全免遭侵害，我们可能会在必要情况下共享您的个人信息。</li>
-                <li><strong>关联公司共享</strong>：我们可能会与我们的关联公司共享您的个人信息，但我们只会共享必要的个人信息，且受本隐私政策的约束。</li>
-                <li><strong>与服务提供商共享</strong>：我们可能会向合作的服务提供商共享您的个人信息，以提供技术、客户服务等支持。这些服务提供商只能访问其提供服务所必需的个人信息，且必须遵守严格的保密义务。</li>
-            </ul>
-            
-            <h3>3.1 数据出境</h3>
-            <p>原则上，我们在中华人民共和国境内收集和产生的个人信息，将存储在中华人民共和国境内。如因业务需要，确需向境外传输个人信息，我们将严格按照法律法规的规定执行，并取得您的明确同意。</p>
-        </section>
-        
-        <section>
-            <h2>四、您的权利</h2>
-            <p>您对自己的个人信息享有以下权利：</p>
-            
-            <ul>
-                <li><strong>访问权</strong>：您有权访问我们持有的关于您的个人信息。</li>
-                <li><strong>更正权</strong>：当您发现我们处理的关于您的个人信息有错误时，您有权要求我们做出更正。</li>
-                <li><strong>删除权</strong>：在特定情形下，您有权要求我们删除您的个人信息。</li>
-                <li><strong>撤回同意权</strong>：您有权随时撤回您已同意的隐私政策。但撤回同意不影响撤回前基于您的同意开展的个人信息处理活动的效力。</li>
-                <li><strong>注销权</strong>：您有权注销您的账户。账户注销后，我们将停止为您提供产品和服务，并根据适用法律的要求删除您的个人信息或进行匿名化处理。</li>
-                <li><strong>获取个人信息副本权</strong>：您有权获取您的个人信息副本。</li>
-            </ul>
-            
-            <div class="contact-info">
-                <h3>如何行使您的权利</h3>
-                <p>您可以通过以下方式行使上述权利：</p>
-                <p>1. 通过应用内的"设置-隐私管理"功能操作；</p>
-                <p>2. 发送电子邮件至：developer@humaneotec.com 。</p> 
-                <p>我们将在15个工作日内回复您的请求。如您对我们的回复不满意，还可以向相关监管机构投诉。</p>
-            </div>
-        </section>
-        
-        <section>
-            <h2>五、信息安全保护</h2>
-            <p>我们采取各种安全技术和措施来保护您的个人信息，防止数据遭到未经授权的访问、公开披露、使用、修改、损坏或丢失。具体措施包括：</p>
-            
-            <ul>
-                <li><strong>数据加密</strong>：我们对敏感个人信息进行加密存储和传输。</li>
-                <li><strong>访问控制</strong>：我们严格控制对个人信息的访问权限，仅允许有必要知晓的人员访问。</li>
-                <li><strong>安全审计</strong>：我们定期审查信息收集、存储和处理的安全措施。</li>
-                <li><strong>员工培训</strong>：我们对员工进行隐私保护培训，确保他们了解保护个人信息的重要性。</li>
-                <li><strong>应急预案</strong>：我们制定了个人信息安全事件应急预案，确保在发生安全事件时能够及时响应。</li>
-            </ul>
-            
-            <p>尽管有上述安全措施，但请注意在互联网上不存在"完善的安全措施"。我们将尽力确保您的信息的安全，但无法保证信息的绝对安全。</p>
-        </section>
-        
-        <section>
-            <h2>六、未成年人保护</h2>
-            <p>我们非常重视对未成年人个人信息的保护。如果您是未满18周岁的未成年人，请在您的父母或其他监护人的指导下使用本应用。</p>
-            
-            <p>我们不会在明知的情况下收集未成年人的个人信息。如果我们发现自己在未事先获得可证实的父母同意的情况下收集了未成年人的个人信息，则会设法尽快删除相关数据。</p>
-            
-            <p>如果父母或监护人发现其监护的未成年人未经同意向我们提供了个人信息，请通过本政策中的联系方式与我们联系，我们将采取措施删除相关信息。</p>
-        </section>
-        
-        <section>
-            <h2>七、隐私政策的更新</h2>
-            <p>我们可能会不时更新本隐私政策。当政策发生变更时，我们会在本页面发布更新后的隐私政策，并通过适当的方式（如在应用内通知）通知您。请您定期查看本页面以了解最新的隐私政策。</p>
-            
-            <p>对于重大变更，我们会提供显著的通知（包括通过应用内通知或电子邮件发送通知，说明隐私政策的具体变更内容）。</p>
-            
-            <p>本政策所指的重大变更包括但不限于：</p>
-            <ul>
-                <li>我们的服务模式发生重大变化；</li>
-                <li>个人信息共享、转让或公开披露的主要对象发生变化；</li>
-                <li>您参与个人信息处理方面的权利及其行使方式发生重大变化；</li>
-                <li>我们的联络方式及投诉渠道发生变化；</li>
-                <li>个人信息安全影响评估报告表明存在高风险时。</li>
-            </ul>
-            
-            <p>若您不同意更新后的隐私政策，您有权停止使用我们的服务。如果您继续使用我们的服务，即表示您同意接受更新后的隐私政策。</p>
-        </section>
-        
-        <section>
-            <h2>八、联系我们</h2>
-            <p>如果您对本隐私政策有任何疑问、意见或建议，或者想要行使您的个人信息权利，请通过以下方式与我们联系：</p>
-            
-            <div class="contact-info">
-                <p><strong>公司名称</strong>：曼纽科医疗器械(湖南)有限公司</p>
-                <p><strong>电子邮箱</strong>：developer@humaneotec.com</p>
-                <p><strong>客服电话</strong>：13902321567（工作时间：周一至周五 9:00-18:00）</p>
-                <p><strong>办公地址</strong>：深圳市光明区光明街道碧眼社区华强创意产业园4栋A座1202</p> 
-            </div>
-            
-            <p>我们将在15个工作日内回复您的请求。如您对我们的回复不满意，特别是当我们的个人信息处理行为损害了您的合法权益，您还可以向网信、电信、公安及市场监管等监管部门进行投诉或举报。</p>
-        </section>
-        
-        <div class="back-to-app">
-            <a href="javascript:history.back()">返回应用</a>
-        </div>
-        
-        <footer>
-            <p>© 2025 曼纽科医疗器械(湖南)有限公司 版权所有</p>
-            <p>本隐私政策最终解释权归曼纽科医疗器械(湖南)有限公司所有</p>
-        </footer>
-    </div>
-    
-    <!-- 英文版本（默认隐藏） -->
-<div class="container" id="en-version" style="display: none;">
-    <header>
-        <h1>Privacy Policy</h1>
-        <p class="subtitle">Nerve and Muscle Stimulator</p>
-        <div class="last-updated">Last Updated: January 15, 2024</div>
-    </header>
-    
-    <section>
-        <p>Thank you for using our Nerve and Muscle Stimulator Application (hereinafter referred to as "the Application"). We understand the importance of personal information to you and will do our utmost to protect the security of your personal information. This Privacy Policy aims to inform you about how we collect, use, store, share, and protect your personal information, as well as how you can manage your personal information.</p>
-        
-        <p class="important">Before using the Application, please read and understand the entire content of this Privacy Policy carefully. If you do not agree with any content of this Privacy Policy, you should immediately stop using the Application. When you start using the Application, it means that you have fully understood and agreed to the entire content of this Privacy Policy.</p>
-    </section>
-    
-    <section>
-        <h2>1. Information We Collect</h2>
-        <p>To provide you with rehabilitation training services, we collect the following types of information:</p>
-        
-        <h3>1.1 Information You Provide</h3>
-        <ul>
-            <li><strong>Account Information</strong>: When you register an account, we collect your username, password, etc.</li>
-            <li><strong>Patient Information</strong>: When you add a patient, we collect medical-related information such as the patient's name, gender, age, physical condition, etc.</li>
-            <li><strong>Training Data</strong>: During training, we collect data such as training time, training programs, training intensity, training frequency, etc.</li>
-            <li><strong>Device Information</strong>: To connect to rehabilitation training devices, we collect information such as device model, device ID, device status, etc.</li>
-        </ul>
-        
-        <h3>1.2 Information We Collect Automatically</h3>
-        <ul>
-            <li><strong>Device Information</strong>: We may collect information about your device model, operating system version, unique device identifier, etc.</li>
-            <li><strong>Log Information</strong>: When you use the Application, we may automatically collect detailed usage of our services as service logs.</li>
-            <li><strong>Location Information</strong>: With your consent, we may collect your approximate location information to provide localized services.</li>
-        </ul>
-        
-        <div class="highlight">
-            <p><strong>Important Note</strong>: All health-related data collected by this Application is only used to provide you with rehabilitation training services and will not be used for other commercial purposes. We will not sell your health data to any third party.</p>
-        </div>
-    </section>
-    
-    <!-- 中间部分保持不变，仅表格内容与中文一致 -->
-    
-    <section>
-        <h2>8. Contact Us</h2>
-        <p>If you have any questions, comments or suggestions about this Privacy Policy, or want to exercise your personal information rights, please contact us in the following ways:</p>
-        
-        <div class="contact-info">
-            <p><strong>Company Name</strong>: Humaneotec Medical Equipment (Hunan) Co., LTD.</p>
-            <p><strong>Email</strong>: developer@humaneotec.com</p>
-            <p><strong>Customer Service</strong>: 13902321567 (Working hours: Monday to Friday 9:00-18:00)</p>
-            <p><strong>Office Address</strong>: 1202, Block A, Building 4, Huaqiang Creative Industrial Park, Biyan Community, Guangming Street, Guangming District, Shenzhen</p>
-        </div>
-        
-        <p>We will respond to your request within 15 working days. If you are not satisfied with our response, especially when our personal information processing behavior damages your legitimate rights and interests, you can also complain or report to regulatory authorities such as cyberspace, telecommunications, public security and market supervision.</p>
-    </section>
-    
-    <div class="back-to-app">
-        <a href="javascript:history.back()">Return to App</a>
-    </div>
-    
-    <footer>
-        <p>© 2025 Humaneotec Medical Equipment (Hunan) Co., LTD. All rights reserved</p>
-        <p>The final interpretation right of this Privacy Policy belongs toHumaneotec Medical Equipment (Hunan) Co., LTD.</p>
-    </footer>
-</div>
-    
-    <script>
-        // 语言切换功能
-        function switchLanguage(lang) {
-            const zhVersion = document.getElementById('zh-version');
-            const enVersion = document.getElementById('en-version');
-            
-            if (lang === 'zh') {
-                zhVersion.style.display = 'block';
-                enVersion.style.display = 'none';
-                document.title = '用户隐私政策 - 康复训练设备应用';
-            } else if (lang === 'en') {
-                zhVersion.style.display = 'none';
-                enVersion.style.display = 'block';
-                document.title = 'Privacy Policy - Rehabilitation Training Device Application';
-            }
-            
-            // 保存语言偏好
-            localStorage.setItem('privacyPolicyLanguage', lang);
-            
-            // 滚动到顶部
-            window.scrollTo(0, 0);
-        }
-        
-        // 页面加载时读取语言偏好
-        document.addEventListener('DOMContentLoaded', function() {
-            const savedLang = localStorage.getItem('privacyPolicyLanguage') || 'zh';
-            switchLanguage(savedLang);
-            
-            // 更新日期
-            const currentDate = new Date();
-            const formattedDate = currentDate.getFullYear() + '年' + 
-                                 (currentDate.getMonth() + 1) + '月' + 
-                                 currentDate.getDate() + '日';
-            
-            // 更新所有最后更新日期
-            const lastUpdatedElements = document.querySelectorAll('.last-updated');
-            lastUpdatedElements.forEach(element => {
-                if (element.textContent.includes('2024')) {
-                    element.textContent = element.textContent.replace('2024年1月15日', formattedDate);
-                }
-            });
-        });
-    </script>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>神经和肌肉刺激器 - 隐私政策 / Neuromuscular Stimulator - Privacy Policy</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+			}
+
+			body {
+				background-color: #f8f9fa;
+				color: #333;
+				line-height: 1.6;
+				padding: 20px;
+				max-width: 1000px;
+				margin: 0 auto;
+			}
+
+			header {
+				text-align: center;
+				margin-bottom: 30px;
+				padding-bottom: 20px;
+				border-bottom: 1px solid #eee;
+				position: relative;
+			}
+
+			h1 {
+				color: #2c3e50;
+				font-size: 24px;
+				margin-bottom: 10px;
+			}
+
+			.update-date {
+				color: #7f8c8d;
+				font-size: 14px;
+			}
+
+			.language-switch {
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				background-color: #4a6fa5;
+				color: white;
+				border: none;
+				padding: 8px 16px;
+				border-radius: 4px;
+				cursor: pointer;
+				font-size: 14px;
+				transition: background-color 0.3s;
+			}
+
+			.language-switch:hover {
+				background-color: #3a5a8a;
+			}
+
+			.language-switch.en {
+				background-color: #e74c3c;
+			}
+
+			.language-switch.en:hover {
+				background-color: #c0392b;
+			}
+
+			section {
+				margin-bottom: 25px;
+				background: white;
+				padding: 20px;
+				border-radius: 8px;
+				box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+				display: block;
+			}
+
+			section.zh {
+				display: block;
+			}
+
+			section.en {
+				display: none;
+			}
+
+			h2 {
+				color: #34495e;
+				font-size: 18px;
+				margin-bottom: 15px;
+				padding-bottom: 5px;
+				border-bottom: 1px solid #eee;
+			}
+
+			p,
+			li {
+				font-size: 16px;
+				margin-bottom: 10px;
+				color: #555;
+			}
+
+			ul {
+				margin-left: 20px;
+				margin-bottom: 15px;
+			}
+
+			.contact {
+				background-color: #e8f4f8;
+				padding: 15px;
+				border-radius: 6px;
+				margin-top: 20px;
+			}
+
+			.contact p {
+				margin-bottom: 5px;
+			}
+
+			@media (max-width: 768px) {
+				body {
+					padding: 10px;
+				}
+
+				header {
+					padding-top: 50px;
+				}
+
+				.language-switch {
+					position: fixed;
+					top: 10px;
+					right: 10px;
+					z-index: 100;
+				}
+
+				section {
+					padding: 15px;
+				}
+
+				h1 {
+					font-size: 20px;
+				}
+
+				h2 {
+					font-size: 16px;
+				}
+
+				p,
+				li {
+					font-size: 14px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1 class="zh">神经和肌肉刺激器隐私政策</h1>
+			<h1 class="en" style="display: none;">Neuromuscular Stimulator Privacy Policy</h1>
+			<div class="update-date zh">最后更新日期：2025年12月19日</div>
+			<div class="update-date en" style="display: none;">Last Updated: December 19, 2025</div>
+			<button class="language-switch" id="languageToggle">English / 英文</button>
+		</header>
+
+		<!-- 中文版本 -->
+		<section class="zh">
+			<h2>1. 隐私政策的适用范围</h2>
+			<p>本隐私政策适用于"神经和肌肉刺激器"App（以下简称"本App"）的所有用户，涵盖本App收集、使用、存储、共享及保护用户信息的全部行为。本App主要为用户提供神经肌肉电刺激参数设置、刺激方案管理、使用数据记录等服务，我们将严格遵守《中华人民共和国个人信息保护法》《健康医疗大数据管理办法》等相关法律法规，保护用户的个人信息和健康数据安全。</p>
+		</section>
+
+		<section class="zh">
+			<h2>2. 我们收集的信息及收集方式</h2>
+			<p>为保障本App正常运行并为您提供优质的神经肌肉刺激服务，我们会收集以下类型的信息：</p>
+			<ul>
+				<li><strong>设备基础信息</strong>：包括设备型号、操作系统版本、唯一设备标识符（如IMEI、Android ID）、网络类型等，用于App适配、故障排查及服务优化，收集方式为App运行时自动获取。</li>
+				<li><strong>患者信息</strong>：当您添加患者时，我们会收集患者的姓名、性别、年龄、身体状况等医疗相关信息。</li>
+				<li><strong>健康及使用数据</strong>：包括您设置的刺激强度、频率、时长等参数，刺激部位、使用时间、使用频次。此类数据为核心健康数据，收集方式为App根据您的使用行为自动记录，仅用于为您提供个性化刺激方案、使用数据统计及服务改进。</li>
+				<li><strong>位置信息（可选）</strong>：仅在您授权的情况下收集粗略位置信息，用于适配地区性服务优化（如电压适配提示），您可随时在设备设置中关闭授权。</li>
+			</ul>
+			<p>我们不会强制收集非必要信息，您拒绝提供非必要信息不会影响本App基础功能的使用。</p>
+		</section>
+
+		<section class="zh">
+			<h2>3. 信息的使用目的</h2>
+			<p>我们收集的信息仅用于以下合法目的，且不会超出与您达成的服务范围：</p>
+			<ul>
+				<li>向您提供服务；</li>
+				<li>提供和维护本App的核心功能，包括神经肌肉刺激参数设置、设备连接、数据记录与展示；</li>
+				<li>优化App性能和用户体验，排查并修复故障，提升服务稳定性；</li>
+				<li>验证用户身份，保障账户安全，防范欺诈、盗号等违法违规行为；</li>
+				<li>软件认证或管理软件升级；</li>
+				<li>遵守法律法规要求，配合监管部门的合法调查。</li>
+			</ul>
+		</section>
+
+		<section class="zh">
+			<h2>4. 信息的共享与披露</h2>
+			<p>我们严格保护您的信息安全，不会随意共享、转让或披露您的个人信息和健康数据，仅在以下有限情况下进行：</p>
+			<ul>
+				<li>我们以及我们的关联公司，可能将您的个人信息与我们的关联公司、合作伙伴及第三方服务供应商、承包商及代理（例如代表我们发出电子邮件或推送通知的通讯服务提供商、为我们提供位置数据的地图服务供应商）分享（他们可能并非位于您所在的法域），用作下列用途：
+					<ul>
+						<li>向您提供我们的服务；</li>
+						<li>实现"我们可能如何使用信息"部分所述目的；</li>
+						<li>履行我们在《腾讯服务协议》或本《隐私政策》中的义务和行使我们的权利；</li>
+						<li>理解、维护和改善我们的服务。</li>
+					</ul>
+				</li>
+			</ul>
+			<p>如我们或我们的关联公司与任何上述第三方分享您的个人信息，我们将努力确保该等第三方在使用您的个人信息时遵守本《隐私政策》及我们要求其遵守的其他适当的保密和安全措施。</p>
+			<ul>
+				<li>随着我们业务的持续发展，我们以及我们的关联公司有可能进行合并、收购、资产转让或类似的交易，您的个人信息有可能作为此类交易的一部分而被转移。我们将在转移前通知您。</li>
+				<li>我们或我们的关联公司还可能为以下需要而保留、保存或披露您的个人信息：
+					<ul>
+						<li>遵守适用的法律法规；</li>
+						<li>遵守法院命令或其他法律程序的规定；</li>
+						<li>遵守相关政府机关的要求；</li>
+						<li>为遵守适用的法律法规、维护社会公共利益，或保护我们的客户、我们或我们的集团公司、其他用户或雇员的人身和财产安全或合法权益所合理必需的用途。</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+
+		<section class="zh">
+			<h2>5. 信息安全</h2>
+			<p>我们仅在本《隐私政策》所述目的必需的期间和法律法规要求的时限内保留您的个人信息。我们使用各种安全技术和程序，以防信息的丢失、不当使用、未经授权阅览或披露。例如，在某些服务中，我们将利用加密技术（例如SSL）来保护您提供的个人信息。但请您理解，由于技术的限制以及可能存在的各种恶意手段，在互联网行业，即便竭尽所能加强安全措施，也不可能始终保证信息百分之百安全。您需要了解，您接入我们的服务所用的系统和通讯网络，有可能因我们可控范围外的因素而出现问题。</p>
+		</section>
+
+		<section class="zh">
+			<h2>6. 您的权利</h2>
+			<p>根据相关法律法规，您对自己的个人信息享有以下权利：</p>
+			<ul>
+				<li><strong>访问权</strong>：您可在App查看您的账户信息、健康数据、使用记录；</li>
+				<li><strong>更正权</strong>：若您发现信息记录错误，可申请更正账户信息或健康数据；</li>
+				<li><strong>删除权</strong>：您可随时删除您的使用记录、健康数据；</li>
+				<li><strong>撤回授权权</strong>：您可在设备设置中撤回对位置、存储、相机等权限的授权。</li>
+			</ul>
+			<p>如需行使上述权利，您可通过本政策第七条的联系方式联系我们，我们将在15个工作日内响应您的请求。</p>
+		</section>
+
+		<section class="zh">
+			<h2>7. 未成年人保护</h2>
+			<p>本App主要面向成年人使用，若未成年人（未满18周岁）使用本App，需在监护人的陪同和指导下进行，且监护人需同意本隐私政策。我们不会主动收集未成年人的个人信息，若发现未成年人使用本App，我们会要求监护人确认并监管其信息使用行为。如监护人发现未成年人的信息被不当收集，可联系我们删除相关信息。</p>
+		</section>
+
+		<section class="zh">
+			<h2>8. 隐私政策的变更</h2>
+			<p>我们可能适时修订本《隐私政策》的条款，该等修订构成本《隐私政策》的一部分。<strong>如该等修订造成您在本《隐私政策》下权利的实质减少，我们将在修订生效前通过在主页上显著位置提示或向您发送电子邮件或以其他方式通知您。在该种情况下，若您继续使用我们的服务，即表示同意受经修订的本《隐私政策》的约束。</strong></p>
+		</section>
+
+		<section class="zh">
+			<h2>9. 联系方式</h2>
+			<div class="contact">
+				<p>若您对本隐私政策有任何疑问、建议或投诉，可通过以下方式联系我们：</p>
+				<p>邮箱：developer@humaneotec.com</p>
+				<p>电话：13902321567（工作日9:00-18:00）</p>
+				<p>公司地址：广东省深圳市光明区光明街道碧眼社区华强创意产业园4栋A座1202</p>
+			</div>
+		</section>
+
+		<!-- 英文版本 -->
+		<section class="en">
+			<h2>1. Scope of Privacy Policy</h2>
+			<p>This Privacy Policy applies to all users of the "Neuromuscular Stimulator" App (hereinafter referred to as "this App") and covers all activities regarding the collection, use, storage, sharing, and protection of user information. This App primarily provides users with services such as neuromuscular electrical stimulation parameter settings, stimulation plan management, and usage data recording. We strictly comply with relevant laws and regulations such as the "Personal Information Protection Law of the People's Republic of China" and the "Health Medical Big Data Management Measures" to protect users' personal information and health data security.</p>
+		</section>
+
+		<section class="en">
+			<h2>2. Information We Collect and Collection Methods</h2>
+			<p>To ensure the normal operation of this App and provide you with high-quality neuromuscular stimulation services, we collect the following types of information:</p>
+			<ul>
+				<li><strong>Basic Device Information</strong>: Including device model, operating system version, unique device identifier (such as IMEI, Android ID), network type, etc., used for App adaptation, troubleshooting, and service optimization. Collection method: automatically obtained when the App is running.</li>
+				<li><strong>Patient Information</strong>: When you add a patient, we collect medical-related information such as the patient's name, gender, age, and physical condition.</li>
+				<li><strong>Health and Usage Data</strong>: Including stimulation intensity, frequency, duration, stimulation site, usage time, and frequency. This data is core health data, collected automatically by the App based on your usage behavior, and is only used to provide you with personalized stimulation plans, usage statistics, and service improvement.</li>
+				<li><strong>Location Information (Optional)</strong>: Collected only with your authorization for regional service optimization (such as voltage adaptation prompts). You can revoke authorization at any time in device settings.</li>
+			</ul>
+			<p>We do not force the collection of unnecessary information. Your refusal to provide non-essential information will not affect the use of basic functions of this App.</p>
+		</section>
+
+		<section class="en">
+			<h2>3. Purpose of Information Use</h2>
+			<p>The information we collect is used only for the following legitimate purposes and will not exceed the scope of services agreed with you:</p>
+			<ul>
+				<li>Providing services to you;</li>
+				<li>Providing and maintaining core functions of this App, including neuromuscular stimulation parameter settings, device connection, data recording and display;</li>
+				<li>Optimizing App performance and user experience, troubleshooting and fixing issues, improving service stability;</li>
+				<li>Verifying user identity, ensuring account security, preventing illegal activities such as fraud and account theft;</li>
+				<li>Software authentication or managing software upgrades;</li>
+				<li>Complying with legal requirements and cooperating with legitimate investigations by regulatory authorities.</li>
+			</ul>
+		</section>
+
+		<section class="en">
+			<h2>4. Information Sharing and Disclosure</h2>
+			<p>We strictly protect your information security and will not arbitrarily share, transfer, or disclose your personal information and health data, except in the following limited circumstances:</p>
+			<ul>
+				<li>We and our affiliates may share your personal information with our affiliates, partners, and third-party service providers, contractors, and agents (such as communication service providers that send emails or push notifications on our behalf, map service providers that provide location data) (who may not be located in your jurisdiction) for the following purposes:
+					<ul>
+						<li>Providing our services to you;</li>
+						<li>Achieving the purposes described in the "How We May Use Information" section;</li>
+						<li>Fulfilling our obligations and exercising our rights under the "Tencent Service Agreement" or this Privacy Policy;</li>
+						<li>Understanding, maintaining, and improving our services.</li>
+					</ul>
+				</li>
+			</ul>
+			<p>If we or our affiliates share your personal information with any of the above third parties, we will strive to ensure that such third parties comply with this Privacy Policy and other appropriate confidentiality and security measures we require when using your personal information.</p>
+			<ul>
+				<li>As our business continues to develop, we and our affiliates may engage in mergers, acquisitions, asset transfers, or similar transactions, and your personal information may be transferred as part of such transactions. We will notify you before such transfer.</li>
+				<li>We or our affiliates may also retain, preserve, or disclose your personal information for the following needs:
+					<ul>
+						<li>Complying with applicable laws and regulations;</li>
+						<li>Complying with court orders or other legal procedures;</li>
+						<li>Complying with requirements of relevant government authorities;</li>
+						<li>Purposes reasonably necessary to comply with applicable laws and regulations, safeguard public interest, or protect the personal and property safety or legitimate rights and interests of our customers, us or our group companies, other users, or employees.</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+
+		<section class="en">
+			<h2>5. Information Security</h2>
+			<p>We retain your personal information only for the period necessary for the purposes described in this Privacy Policy and as required by laws and regulations. We use various security technologies and procedures to prevent loss, improper use, unauthorized access, or disclosure of information. For example, in some services, we will use encryption technology (such as SSL) to protect the personal information you provide. However, please understand that due to technological limitations and possible malicious means, in the Internet industry, even with our best efforts to strengthen security measures, we cannot always guarantee 100% security of information. You need to understand that the systems and communication networks you use to access our services may have problems due to factors beyond our control.</p>
+		</section>
+
+		<section class="en">
+			<h2>6. Your Rights</h2>
+			<p>According to relevant laws and regulations, you have the following rights regarding your personal information:</p>
+			<ul>
+				<li><strong>Right of Access</strong>: You can view your account information, health data, and usage records in the App;</li>
+				<li><strong>Right to Correction</strong>: If you find errors in information records, you can apply to correct account information or health data;</li>
+				<li><strong>Right to Deletion</strong>: You can delete your usage records and health data at any time;</li>
+				<li><strong>Right to Withdraw Authorization</strong>: You can withdraw authorization for permissions such as location, storage, and camera in device settings.</li>
+			</ul>
+			<p>To exercise the above rights, you can contact us through the contact information in Article 7 of this policy. We will respond to your request within 15 working days.</p>
+		</section>
+
+		<section class="en">
+			<h2>7. Protection of Minors</h2>
+			<p>This App is primarily intended for use by adults. If minors (under 18 years old) use this App, they must do so under the accompaniment and guidance of guardians, and guardians must agree to this Privacy Policy. We do not actively collect personal information of minors. If we find minors using this App, we will require guardians to confirm and supervise their information usage. If guardians find that minors' information has been improperly collected, they can contact us to delete the relevant information.</p>
+		</section>
+
+		<section class="en">
+			<h2>8. Changes to Privacy Policy</h2>
+			<p>We may revise the terms of this Privacy Policy from time to time, and such revisions constitute part of this Privacy Policy. <strong>If such revisions substantially reduce your rights under this Privacy Policy, we will notify you by prominently posting a notice on the homepage or sending you an email or other means before the revision takes effect. In such cases, if you continue to use our services, it means you agree to be bound by the revised Privacy Policy.</strong></p>
+		</section>
+
+		<section class="en">
+			<h2>9. Contact Information</h2>
+			<div class="contact">
+				<p>If you have any questions, suggestions, or complaints about this privacy policy, you can contact us through the following methods:</p>
+				<p>Email: developer@humaneotec.com</p>
+				<p>Phone: 13902321567 (Weekdays 9:00-18:00)</p>
+				<p>Company Address: Room 1202, Block A, Building 4, Huaqiang Creative Industrial Park, Biyan Community, Guangming Street, Guangming District, Shenzhen, Guangdong Province, China</p>
+			</div>
+		</section>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const languageToggle = document.getElementById('languageToggle');
+				const zhElements = document.querySelectorAll('.zh');
+				const enElements = document.querySelectorAll('.en');
+				let isEnglish = false;
+				
+				// 检查是否有语言偏好存储在本地
+				const savedLang = localStorage.getItem('preferredLanguage');
+				if (savedLang === 'en') {
+					switchToEnglish();
+				}
+				
+				languageToggle.addEventListener('click', function() {
+					if (isEnglish) {
+						switchToChinese();
+					} else {
+						switchToEnglish();
+					}
+				});
+				
+				function switchToEnglish() {
+					isEnglish = true;
+					languageToggle.textContent = '中文 / Chinese';
+					languageToggle.classList.add('en');
+					
+					// 切换所有中文元素
+					zhElements.forEach(el => {
+						el.style.display = 'none';
+					});
+					
+					// 切换所有英文元素
+					enElements.forEach(el => {
+						el.style.display = 'block';
+					});
+					
+					// 保存语言偏好
+					localStorage.setItem('preferredLanguage', 'en');
+				}
+				
+				function switchToChinese() {
+					isEnglish = false;
+					languageToggle.textContent = 'English / 英文';
+					languageToggle.classList.remove('en');
+					
+					// 切换所有中文元素
+					zhElements.forEach(el => {
+						el.style.display = 'block';
+					});
+					
+					// 切换所有英文元素
+					enElements.forEach(el => {
+						el.style.display = 'none';
+					});
+					
+					// 保存语言偏好
+					localStorage.setItem('preferredLanguage', 'zh');
+				}
+			});
+		</script>
+	</body>
 </html>
